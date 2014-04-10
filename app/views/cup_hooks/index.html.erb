@@ -1,0 +1,57 @@
+<h1>Listing cup_hooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sku</th>
+      <th>Per box</th>
+      <th>Lbs per case</th>
+      <th>Act wire size</th>
+      <th>Dec dia</th>
+      <th>Base dia</th>
+      <th>Inside dia hook</th>
+      <th>Stem length</th>
+      <th>Thread length</th>
+      <th>Projection length</th>
+      <th>Pieces per card</th>
+      <th>Card size</th>
+      <th>Material</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cup_hooks.each do |cup_hook| %>
+      <tr>
+        <td><%= cup_hook.name %></td>
+        <td><%= cup_hook.sku %></td>
+        <td><%= cup_hook.per_box %></td>
+        <td><%= cup_hook.lbs_per_case %></td>
+        <td><%= cup_hook.act_wire_size %></td>
+        <td><%= cup_hook.dec_dia %></td>
+        <td><%= cup_hook.base_dia %></td>
+        <td><%= cup_hook.inside_dia_hook %></td>
+        <td><%= cup_hook.stem_length %></td>
+        <td><%= cup_hook.thread_length %></td>
+        <td><%= cup_hook.projection_length %></td>
+        <td><%= cup_hook.pieces_per_card %></td>
+        <td><%= cup_hook.card_size %></td>
+        <td><%= cup_hook.material %></td>
+        <td><%= cup_hook.description %></td>
+        <td><%= cup_hook.category_id %></td>
+        <td><%= link_to 'Show', cup_hook %></td>
+        <td><%= link_to 'Edit', edit_cup_hook_path(cup_hook) %></td>
+        <td><%= link_to 'Destroy', cup_hook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cup hook', new_cup_hook_path %>

@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sku: MyString
+  per_box: MyString
+  lbs_per_case: MyString
+  act_wire_size: MyString
+  dec_dia: 9.99
+  base_dia: MyString
+  inside_dia_hook: MyString
+  stem_length: MyString
+  thread_length: MyString
+  projection_length: MyString
+  pieces_per_card: 1
+  card_size: MyString
+  material: MyString
+  description: MyText
+  category_id: 1
+
+two:
+  name: MyString
+  sku: MyString
+  per_box: MyString
+  lbs_per_case: MyString
+  act_wire_size: MyString
+  dec_dia: 9.99
+  base_dia: MyString
+  inside_dia_hook: MyString
+  stem_length: MyString
+  thread_length: MyString
+  projection_length: MyString
+  pieces_per_card: 1
+  card_size: MyString
+  material: MyString
+  description: MyText
+  category_id: 1

@@ -1,0 +1,81 @@
+<%= form_for(@cup_hook) do |f| %>
+  <% if @cup_hook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cup_hook.errors.count, "error") %> prohibited this cup_hook from being saved:</h2>
+
+      <ul>
+      <% @cup_hook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sku %><br>
+    <%= f.text_field :sku %>
+  </div>
+  <div class="field">
+    <%= f.label :per_box %><br>
+    <%= f.text_field :per_box %>
+  </div>
+  <div class="field">
+    <%= f.label :lbs_per_case %><br>
+    <%= f.text_field :lbs_per_case %>
+  </div>
+  <div class="field">
+    <%= f.label :act_wire_size %><br>
+    <%= f.text_field :act_wire_size %>
+  </div>
+  <div class="field">
+    <%= f.label :dec_dia %><br>
+    <%= f.text_field :dec_dia %>
+  </div>
+  <div class="field">
+    <%= f.label :base_dia %><br>
+    <%= f.text_field :base_dia %>
+  </div>
+  <div class="field">
+    <%= f.label :inside_dia_hook %><br>
+    <%= f.text_field :inside_dia_hook %>
+  </div>
+  <div class="field">
+    <%= f.label :stem_length %><br>
+    <%= f.text_field :stem_length %>
+  </div>
+  <div class="field">
+    <%= f.label :thread_length %><br>
+    <%= f.text_field :thread_length %>
+  </div>
+  <div class="field">
+    <%= f.label :projection_length %><br>
+    <%= f.text_field :projection_length %>
+  </div>
+  <div class="field">
+    <%= f.label :pieces_per_card %><br>
+    <%= f.number_field :pieces_per_card %>
+  </div>
+  <div class="field">
+    <%= f.label :card_size %><br>
+    <%= f.text_field :card_size %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.text_field :material %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
