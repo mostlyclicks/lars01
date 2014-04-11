@@ -1,4 +1,8 @@
 Lar01::Application.routes.draw do
+  resources :categories
+
+  resources :products
+
   resources :cup_hooks
 
   # The priority is based upon order of creation: first created -> highest priority.
