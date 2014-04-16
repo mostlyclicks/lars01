@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lar01</title>
+  <title>Larson Hardware Manufacturing Co.</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+start body
+<div class="row" id="top">
+    <div class="container">
+    	<%= link_to (image_tag 'larson-logo-72.png'), '/' %>
+    </div>
+    <div class="navigation">
+      <div class="container">
+      <nav class="navbar" role="navigation">
+  		<!-- Brand and toggle get grouped for better mobile display -->
+  		<div class="navbar-header">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      		<span class="sr-only">Toggle navigation</span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+    	</button>
+      	<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align:right;">
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#">Custom Estimates</a></li>
+				<li><a href="index.html#">Order</a></li>
+				<li><a href="index.html#">About</a></li>
+				<li><a href="index.html#">Contact</a></li>
+			</ul>
+		</div>
+  	</div>
+ </div>
+start yield
 <%= yield %>
+end yield
+<div class="container" style="position:relative;">
+  <div class="row col-md-12 col-xs-10">
+    <h1 class="ribbon">
+      <strong class="ribbon-content"><span>Questions about your order? Call: (815) 625-0503</span><span class="pull-right" style="padding-right:20px;"><a href="index.html#" class="yellow-link">Download</a> our full catalog.</span></strong>
+    </h1>
+  </div>
+</div>
+<div id="pre-footer">
+  <div class="container top-padding-40">
 
+      <div class="col-md-4">
+        <div class="bucket">
+          <h3>Custom Orders</h3>
+          <p>Our flexible manufacturing process allows us to create custom products at any quantity and at reasonable prices. Send us your requirements and we'll get you a quote.</p>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="bucket"><h3>Made in the U.S.A.</h3>
+          <p>Larson proudly has 25 employees and manufactures all products in the US.</p>
+          <img alt="Flag" class="img-responsive" src="images/flag-b0b7776cf9baadbe167dbdb4a6d201d5.png" />
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="bucket">
+          <h3>Receive Special Offers</h3>
+          <p>Sign up to receive news and special offers from Larson Hardware.</p>
+          <form>
+            
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+            
+            <button class="btn btn-primary col-md-6">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+
+
+    
+    
+
+<div class="footer top-padding-20">
+  <div class="container">
+    <div class="col-md-6"><p>Larson Hardware Manufacturing Co.<br />
+        P.O. Box E - Sterling, IL 61081 </p>
+        <p>&copy; 2013 - All Rights Reserved</p>
+    </div>
+    <div class="col-md-6"><p><span class="pull-right">P: (815) 625-0503<br />
+                F: (815) 625-8786</span></p></div>
+
+    
+
+  </div>
+</div>
+
+end body
 </body>
 </html>
