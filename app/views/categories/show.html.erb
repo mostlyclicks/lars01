@@ -1,47 +1,30 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
-
-<p>
-  <strong>Code:</strong>
-  <%= @category.code %>
-</p>
-	<strong>Products:</strong>
+<strong>Product </strong><%= @category.name %>
 <table>
   <thead>
     <tr>
-      <th>Category</th>
-      <th>Name</th>
-      <th>Stock number</th>
+      <th>Description</th>
+      <th>Stock #</th>
       <th>Material</th>
-      <!-- <th>Description</th> -->
-      <th></th>
-      <th></th>
       <th></th>
     </tr>
   </thead>
-  <p>category_id</P
-  <p><%= @category %></P
 
- <!--  <tbody>
+  <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.category_id %></td>
         <td><%= product.name %></td>
         <td><%= product.stock_number %></td>
         <td><%= product.material %></td>
-<!--    <td><%= product.description.html_safe %></td>-->
         <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+<!--    <td><%= product.description.html_safe %></td>-->
+<!--    <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+ -->      
       </tr>
     <% end %>
   </tbody>
- -->
+ 
 </table><p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<!-- <%= link_to 'Edit', edit_category_path(@category) %> -->
+<!-- <%= link_to 'Back', categories_path %> -->
